@@ -1,0 +1,32 @@
+name: kelcy_local_auth
+description: Android-only Flutter plugin for local authentication via fingerprint, touch ID, face ID, passcode, pin, or pattern. Based on the original local_auth plugin.
+repository: https://github.com/kelcyazef/kelcy_local_auth
+version: 1.0.0
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+  flutter: ">=2.0.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.flutter.plugins.localauth
+        pluginClass: LocalAuthPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_plugin_android_lifecycle: ^2.0.1
+  intl: ^0.17.0
+  meta: ^1.3.0
+  platform: ^3.0.0
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
